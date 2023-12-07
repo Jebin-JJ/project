@@ -1,0 +1,83 @@
+print("String function")
+print("****** *******")
+print("1.Upper")
+print("2.Lower")
+print("3.Capitalize")
+print("4.Swapcase")
+print("5.Split")
+print("6.Replace")
+print("7.Alphabet")
+print("8.Length")
+print("9.Title")
+print("10.Zerofill")
+​
+boolean=True
+while boolean:
+    s=input("Enter a string:")
+    a=int(input("Enter your choice:"))
+    
+    if a==1:
+        print("function chosen : Upper")
+        print("Answer"+""*2+s.upper())
+        
+    elif a==2:
+        print("function chosen :Lower")
+        print("Answer"+""*2+s.lower())
+    
+    elif a==3:
+        print("function chosen :Capitalize")
+        print("Answer"+""*2+s.capitalize())
+        
+    elif a==4:
+        print("function chosen :Swapcase")
+        print("Answer"+""*2+s.swapcase())
+        
+    elif a==5:
+        print("function chosen :Split")
+        li=s.split()
+        print("Answer"+""*2)
+        print(li)
+        
+    elif a==6:
+        print("function chosen :Replace")
+        c=input("Enter the word to be replaced:")
+        b=input("Enter the replace word:")
+        print("Answer"+""*2+s.replace(c,b))
+        
+    elif a==7:
+        print("function chosen :Alaphabet")
+        print("Answer"+""*2)
+        print(s.isalpha())
+        
+    elif a==8:
+        print("function chosen :Length")
+        print("Answer"+""*2+str(len(s)))
+        
+    elif a==9:
+        print("function chosen :Title")
+        print("Answer"+""*2+s.title())
+        
+    elif a==10:
+        print("function chosen :Zerofill")
+        print("Answer"+""*2+s.zfill(len(s)+4))
+        
+    else:
+        print("Ivalid number")
+        
+    choice=input("DO you want to conitue,Press y or n")
+    
+    if choice=="n":
+        boolean=False
+Enter a string:
+String function
+****** *******
+1.Upper
+2.Lower
+3.Capitalize
+4.Swapcase
+5.Split
+6.Replace
+7.Alphabet
+8.Length
+9.Title
+10.Zerofill
